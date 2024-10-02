@@ -89,12 +89,20 @@ h1, h2, h3 {
     height: 100vh;
     padding: 40px 20px;
     text-align: center;
+    flex-grow: 1;
 }
 
 .content-section h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
+    margin-top: 10px;
     color: #ff6600;
+}
+
+.content-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: white;
 
 }
 
@@ -160,15 +168,77 @@ h1, h2, h3 {
     }
 }
 
-
 .footer {
-    margin-top: 120%;
     background-color: #222;
     padding: 15px;
     text-align: center;
+    margin-top: auto;
 }
 
 .footer p {
     color: #888;
     font-size: 0.9rem;
 }
+
+.grid-header {
+    padding: 50px 20px;
+    background-color: #222;
+    text-align: center;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #ff6600;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.service-card:hover {
+    background-color: #ff3300;
+    cursor: pointer;
+}
+
+
+.flexbox-comments {
+    padding: 25px 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    margin-top: 290vh;
+}
+
+.flexbox-comments h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+} 
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review-card {
+    flex: 1 1 calc(30% - 20px);
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.review-card:hover {
+    transform: scale(1.025);
+}
+
